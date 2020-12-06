@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UDiskPartitionDlg</class>
+ <widget class="QDialog" name="UDiskPartitionDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>76</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>分区授权工具</string>
+  </property>
+  <widget class="QPushButton" name="pbPartition">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分区</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbAuth">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>授权加密设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pbPartition</sender>
+   <signal>clicked()</signal>
+   <receiver>UDiskPartitionDlg</receiver>
+   <slot>sltPartition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbAuth</sender>
+   <signal>clicked()</signal>
+   <receiver>UDiskPartitionDlg</receiver>
+   <slot>sltAuth()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>sltPartition()</slot>
+  <slot>sltAuth()</slot>
+ </slots>
+</ui>
