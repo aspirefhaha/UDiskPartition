@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
     if(pTranslator->load("./UDiskPartition.qm")){
         a.installTranslator(pTranslator);
     }
-    UDiskPartitionDlg w;
-    //CFormatDlg w;
+    //UDiskPartitionDlg w;
+    CFormatDlg w;
     w.show();
     return a.exec();
 }

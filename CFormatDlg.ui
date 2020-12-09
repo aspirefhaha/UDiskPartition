@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>分区格式化窗口</string>
+   <string>分区窗口</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
