@@ -170,8 +170,12 @@ void CFormatDlg::sltConfirm()
 
 		}
 		else {
-
-			QMessageBox::warning(this, tr("Enum Failed"), tr("Not Found TF Card!"));
+			if (hideDiskSize == 0) {
+				QMessageBox::warning(this, tr("No Hide Partition"), tr("Set Empty Hide Partition Size Succeed!"));
+				accept();
+			}
+			else
+				QMessageBox::warning(this, tr("Enum Failed"), tr("Not Found TF Card!"));
 			return;
 		}
 	}

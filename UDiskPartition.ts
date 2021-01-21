@@ -100,8 +100,9 @@
     <name>CFormatDlg</name>
     <message>
         <location filename="CFormatDlg.ui" line="14"/>
-        <source>分区格式化窗口</source>
-        <translation></translation>
+        <source>分区窗口</source>
+        <oldsource>分区格式化窗口</oldsource>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="CFormatDlg.ui" line="20"/>
@@ -196,11 +197,21 @@
     </message>
     <message>
         <location filename="CFormatDlg.cpp" line="174"/>
+        <source>No Hide Partition</source>
+        <translation>空隐藏分区</translation>
+    </message>
+    <message>
+        <location filename="CFormatDlg.cpp" line="174"/>
+        <source>Set Empty Hide Partition Size Succeed!</source>
+        <translation>成功设置隐藏分区大小为0!</translation>
+    </message>
+    <message>
+        <location filename="CFormatDlg.cpp" line="177"/>
         <source>Enum Failed</source>
         <translation>枚举失败</translation>
     </message>
     <message>
-        <location filename="CFormatDlg.cpp" line="174"/>
+        <location filename="CFormatDlg.cpp" line="177"/>
         <source>Not Found TF Card!</source>
         <translation>没有发现TF卡！</translation>
     </message>

@@ -4,7 +4,7 @@
 #include <QDebug>
 #include <QCryptographicHash>
 #include "sdcryptostor.h"
-#define REVSECCOUNT	2000
+#define REVSECCOUNT	2
 CAuthDlg::CAuthDlg(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::CAuthDlg)
@@ -73,7 +73,7 @@ void CAuthDlg::sltConfirm()
 				memcpy(&(tmpdata[512]), pdata, 16);
             }
             
-            if(sd_WriteData(hDevice,cap - (REVSECCOUNT * 8 / 10),sizeof(tmpdata),(UCHAR *)tmpdata)!=SDR_OK){
+            if(sd_WriteData(hDevice,cap - REVSECCOUNT,sizeof(tmpdata),(UCHAR *)tmpdata)!=SDR_OK){
                 QMessageBox::warning(this,tr("Write Failed"),tr("Set Authority Data Failed!"));
 				sd_CloseDevice(hDevice);
             }
